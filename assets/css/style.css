@@ -720,6 +720,13 @@ footer {
         margin-bottom: 2rem;
     }
 
+    /* Improved Image Responsiveness for Mobile */
+    .img-wrapper {
+        width: 280px;
+        height: 280px;
+        max-width: 100%;
+    }
+
     .badges {
         justify-content: center;
     }
@@ -730,5 +737,69 @@ footer {
 
     .bio-snippet {
         margin: 0 auto 2rem;
+    }
+
+    /* Timeline Mobile Adjustments */
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+    }
+
+    /* Certifications Grid */
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Dual Column Stacking */
+    .dual-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .typewriter-text {
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .navbar .logo {
+        font-size: 1.2rem;
+    }
+    
+    .social-links-large {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .social-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
