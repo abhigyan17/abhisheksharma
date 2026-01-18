@@ -501,41 +501,50 @@ ul {
 
 /* Education (Academics) */
 .academics-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    max-width: 800px;
+    max-width: 100%;
+    /* Allow full width for 4 cols */
     margin: 0 auto;
-    /* Center the list */
 }
 
 .academic-item {
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #334155;
+    padding-bottom: 0;
+    border-bottom: none;
+    /* Remove vertical list styling */
+    border-right: 1px solid rgba(51, 65, 85, 0.5);
+    /* Vertical divider */
+    padding-right: 1rem;
     text-align: left;
-    /* Keep text left aligned for readability */
 }
 
 .academic-item:last-child {
-    border-bottom: none;
+    border-right: none;
+    /* No divider for last item */
 }
 
 .academic-item h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    /* Smaller font */
     color: var(--text-primary);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
+    opacity: 0.9;
 }
 
 .academic-item p {
     color: var(--text-secondary);
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+    /* Smaller font */
+    margin-bottom: 0.2rem;
 }
 
 .academic-item .year {
     font-family: var(--font-mono);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    /* Smaller font */
     color: var(--secondary-accent);
+    opacity: 0.8;
 }
 
 /* Certifications */
