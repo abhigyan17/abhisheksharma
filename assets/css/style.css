@@ -99,6 +99,13 @@ ul {
     border-radius: 2px;
 }
 
+.section-separator {
+    border: 0;
+    border-top: 1px solid #334155;
+    margin: 3rem 0;
+    opacity: 0.3;
+}
+
 .alt-bg {
     background-color: #162032;
     /* Slightly lighter than main bg */
@@ -792,12 +799,12 @@ footer {
     .navbar .logo {
         font-size: 1.2rem;
     }
-    
+
     .social-links-large {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .social-btn {
         width: 100%;
         justify-content: center;
