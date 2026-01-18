@@ -801,6 +801,24 @@ footer {
         margin-left: 0;
     }
 
+    /* Academics Mobile */
+    .academics-list {
+        grid-template-columns: 1fr;
+        /* Stack vertically on mobile */
+    }
+
+    .academic-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+        /* Restore horizontal separator */
+        padding-right: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    .academic-item:last-child {
+        border-bottom: none;
+    }
+
     /* Certifications Grid */
     .certs-grid {
         grid-template-columns: 1fr;
