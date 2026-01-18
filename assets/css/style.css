@@ -499,6 +499,45 @@ ul {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Education (Academics) */
+.academics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    /* Center the list */
+}
+
+.academic-item {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+    /* Keep text left aligned for readability */
+}
+
+.academic-item:last-child {
+    border-bottom: none;
+}
+
+.academic-item h3 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.academic-item p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.academic-item .year {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--secondary-accent);
+}
+
 /* Certifications */
 .certs-grid {
     display: grid;
@@ -535,19 +574,6 @@ ul {
     font-family: var(--font-mono);
     font-size: 0.8rem;
     color: var(--secondary-accent);
-}
-
-/* Education */
-.edu-grid {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.edu-card {
-    background: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid var(--accent-color);
 }
 
 /* Awards & Volunteering */
